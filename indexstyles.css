@@ -1,0 +1,58 @@
+body {
+    font-family:Arial,Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+header {
+    background: white;
+}
+
+#navbarul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+#navbarli {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#Welcome {
+    background: rgb(218, 218, 218);
+}
+
+#HowItWorks {
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.steps {
+    margin: auto;
+    background: red;
+    width: 200px; 
+}
+
+#Destination {
+    background: rgb(174, 202, 206);
+}
+
+#About {
+    background: rgb(218, 218, 218);
+    margin: 20px;
+}
+
+#Testimonials {
+    background: white;
+}
+
+#AsSeenOn {
+    background: rgb(218, 218, 218);
+}
+
+footer {
+    background: white;
+}

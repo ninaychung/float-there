@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLOAT/THERE</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--not sure if below font is really necessary but leaving it here-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="indexstyles.css">
+</head>
 
 <body>
     <header>
@@ -21,44 +23,54 @@
             </ul>
         </nav>
     </header>
-    <section id=Welcome>
+    <div class ="jumbotron text-center">
         <h1>Welcome to your travel closet.</h1>
         <h5>Travel light, adventure awaits.</h5>
         <p><u>Going on vacation? Pack your essentials and leave the rest to us.</u></p>
-        <button>Get Started</button>
-    </section>
+        <button class="btn btn-primary" type="submit">Get Started</button>
+    </div>
     <section id=HowItWorks>
-        <h2>How it works</h2>
-        <div class=steps>
-            <h3>one</h3>
-            <p><i>Complete a travel profile</i></p>
-            <p>Answer a few questions so we can get to know you and your trip</p>
+        <div class ="jumbotron text-center">
+            <h2>How it works</h2>
         </div>
-        <div class=steps>
-            <h3>two</h3>
-            <p><i>Review your curated box</i></p>
-            <p>We'll curate a box with pieces we think you'll love, but feel free to browse
-                our collections and edit your box until it's perfect
-            </p>
+        <div class="container px-5 py-5">
+            <div class="row">
+            
+                <div class="col-sm-12 col-lg-2">
+                    <h3>one</h3>
+                    <p><i>Complete a travel profile</i></p>
+                    <p>Answer a few questions so we can get to know you and your trip</p>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <h3>two</h3>
+                    <p><i>Review your curated box</i></p>
+                    <p>We'll curate a box with pieces we think you'll love, but feel free to browse
+                        our collections and edit your box until it's perfect
+                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <h3>three</h3>
+                    <p><i>Pick up at your destination</i></p>
+                    <p>We'll ship the box straigh to your accommodations so you can travel light</p>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <h3>four</h3>
+                    <p><i>Send back before you leave</i></p>
+                    <p>Use the free prepaid label to ship your box back to us before traveling home</p>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <h3>five</h3>
+                    <p><i>Loved something you wore?</i></p>
+                    <p>Buy it from us! Take it home with you directly, or let us know and we'll ship it 
+                        to your home later
+                    </p>
+                </div>
+                
+            </div>
         </div>
-        <div class=steps>
-            <h3>three</h3>
-            <p><i>Pick up at your destination</i></p>
-            <p>We'll ship the box straigh to your accommodations so you can travel light</p>
+        <div class ="jumbotron text-center">
+            <button class="btn btn-primary" type="submit">Get Started Now</button>
         </div>
-        <div class=steps>
-            <h3>four</h3>
-            <p><i>Send back before you leave</i></p>
-            <p>Use the free prepaid label to ship your box back to us before traveling home</p>
-        </div>
-        <div class=steps>
-            <h3>five</h3>
-            <p><i>Loved something you wore?</i></p>
-            <p>Buy it from us! Take it home with you directly, or let us know and we'll ship it 
-                to your home later
-            </p>
-        </div>
-        <button>Get Started Now</button>
     </section>
     <section id=Destination>Choose your destination</section>
     <section id=About>About
@@ -67,5 +79,10 @@
     <section id=Testimonials>What customers say</section>
     <section id=AsSeenOn>As seen on</section>
     <footer>footer</footer>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

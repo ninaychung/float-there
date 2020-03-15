@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth; /* for that smooth scrolling effect when you jump to another page */
+  }
+nav {
+    background: transparent;
+}
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
@@ -5,15 +11,24 @@ body {
     margin: none;
     padding: none; 
 }
+
+h1 {
+    font-size: 300%;
+    font-weight: 300;
+
+}
 h2 {
     color: #66abb0;
-    font-size: 250%;
+    font-size: 225%;
     font-weight: 300;
 }
 
 h5 {  font-size: 150%; }
 
-p { font-size: 100%; }
+p { 
+    font-size: 90%;
+    margin: 5px;
+}
  
 
 .jumbotronheader{
@@ -30,12 +45,6 @@ p { font-size: 100%; }
  
 }
 
-/* change color of "Welcome to your closet*/
-.jumbotronheader h1{
-    color: #E3F2F3;
-}
-
-
 .jumbotronHowItWorks {
    color: #66abb0;
     background-color: white; /* idk why this doesn't work in #howitworks*/
@@ -47,7 +56,7 @@ p { font-size: 100%; }
 
 .jumbotronDestination {
     background-color: #E3F2F3;
-    padding-top: 1%;
+    padding-top: 5%;
     padding-bottom: 1%;
 }
 
@@ -58,10 +67,11 @@ p { font-size: 100%; }
 
 .containerDestination .btn {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    font-size:90%
 }
 
 .containerDestination p {
@@ -70,14 +80,20 @@ p { font-size: 100%; }
     left: 50%;
     transform: translate(-50%, -50%); 
     color: white;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 #Testimonials {
     background-color:#f5f5f5;
 }
 
+#AsSeenOn {
+    background-color: #E3F2F3;
+    padding: 10px;
+}
+
 /* #E3F2F3 logo color*/
+/*
 .btn-primary {
     background-color:#66abb0;
     color: #f2fcfc;
@@ -102,13 +118,14 @@ p { font-size: 100%; }
     border: 0px;
 
 }
-
+*/
 .btn-outline-primary {
     color: #f2fcfc;
     border: 1px solid #f2fcfc;
     border-radius: 0 !important; /* for non-rounded edges */
 
 }
+
 .btn-outline-primary:active {
     background-color:#66abb0;
     color: white;
@@ -156,52 +173,3 @@ p { font-size: 100%; }
     border: 0px;
 
 }
-/*
-body {
-    font-family:Arial,Helvetica,sans-serif;
-    padding: 0;
-    margin: 0;
-
-}
-header {
-    background: white;
-}
-.col-half-offset{
-    margin-left:4.166666667%
-}
-
-#navbarul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-}
-
-#navbarli {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-
-#Destination {
-    background: rgb(174, 202, 206);
-}
-
-#About {
-    background: rgb(218, 218, 218);
-    margin: 20px;
-}
-
-#Testimonials {
-    background: white;
-}
-
-#AsSeenOn {
-    background: rgb(218, 218, 218);
-}
-
-footer {
-    background: white;
-}
-
-*/

@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-transparent">
             <a class="navbar-brand" href="#">
                 <img src="FLOAT_THERE.png" width="30" height="30" alt=""> FLOAT/THERE
             </a>
@@ -25,13 +25,13 @@
                   <a class="nav-link" href="#">Get Started<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">How It Works</a>
+                  <a class="nav-link" href="#HowItWorks">How It Works</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#About">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
+                    <a class="nav-link" href="#Testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Browse Our Collection</a>
@@ -40,17 +40,18 @@
             </div>
             <a class="nav-link" href="#">Sign In</a>
         </nav>
+        <div class ="jumbotron jumbotron-fluid jumbotronheader text-center text-white pt-5">
+            <h1 class="pt-5" style="color: #E3F2F3">Welcome to your travel closet.</h1>
+            <h4 class="pt-5">Travel light, adventure awaits.</h4>
+            <p class="pt-5"><u>Going on vacation? Pack your essentials and leave the rest to us.</u></p>
+            <button class="btn btn-outline-primary mt-5" type="submit">Get Started</button>
+        </div>
        
     </header>
-    <div class ="jumbotron jumbotron-fluid jumbotronheader text-center text-white pt-5">
-        <h1 class="display-3 pt-5">Welcome to your travel closet.</h1>
-        <h4 class="pt-5">Travel light, adventure awaits.</h4>
-        <p class="pt-5"><u>Going on vacation? Pack your essentials and leave the rest to us.</u></p>
-        <button class="btn btn-outline-primary mt-5 btn-lg" type="submit">Get Started</button>
-    </div>
+    
     <section id=HowItWorks>
         <div class ="jumbotron jumbotronHowItWorks text-center">
-            <h1 class="display-4">How it works</h1>
+            <h1>How it works</h1>
         </div>
         <div class="container-fluid px-5">
             <div class="row">
@@ -70,7 +71,7 @@
                 <div class="col-sm-12 col-md-2">
                     <h3>three</h3>
                     <p><i>Pick up at your destination</i></p>
-                    <p>We'll ship the box straigh to your accommodations so you can travel light</p>
+                    <p>We'll ship the box straight to your accommodations so you can travel light</p>
                 </div>
                 <div class="col-sm-12 col-md-2">
                     <h3>four</h3>
@@ -88,13 +89,13 @@
             </div>
         </div>
         <div class ="jumbotron jumbotronHowItWorks text-center">
-            <button class="btn btn2 btn-outline-primary btn-lg px-5" type="submit">Get Started Now</button>
+            <button class="btn btn2 btn-outline-primary px-5" type="submit">Get Started Now</button>
         </div>
     </section>
     <section id=Destination>
         <div class ="jumbotron jumbotronDestination text-center">
-            <h1 class="display-4 py-4">Choose Your Destination</h1>
-            <button class="btn btn2 btn-outline-primary btn-lg px-5" type="submit">Shop All</button>
+            <h1>Choose Your Destination</h1>
+            <button class="btn btn2 btn-outline-primary mt-5 px-5" type="submit">Shop All</button>
         </div>
         <div class="container-fluid containerDestination">
             <div class="row">
@@ -159,14 +160,14 @@
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <h2 class="py-4">What Our Customers Say</h2>
-                            <p>"FLOAT/THERE makes my travel so much easier! I’m not worried about 
+                            <p class="py-5">"FLOAT/THERE makes my travel so much easier! I’m not worried about 
                                 losing luggage or getting charged extra for heavy luggage because 
                                 they provide outfits that perfectly match my style. I’ve used it 
                                 for more than one trip and each package was tailored to the 
                                 location I was going to and the activities I had planned. 
                                 Returning is easy: just drop off right before your next flight."
                             </p>
-                            <p class="text-right">- Erika G.</p>
+                            <p class="text-right py-2">- Erika G.</p>
                             <p class="text-right">Destination: San Diego, CA</p>
                         </div>
                     </div>
@@ -180,12 +181,12 @@
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <h2 class="py-4">What Our Customers Say</h2>
-                            <p>"FLOAT/THERE was amazing for my trip to Austin! I rarely check a 
+                            <p class="py-5"> "FLOAT/THERE was amazing for my trip to Austin! I rarely check a 
                                 bag so it made it super easy to have more options that I didn’t 
                                 have to pack! Plus it’s always great to have cute options when you 
                                 know you’ll be taking pictures on vacation."
                             </p>
-                            <p class="text-right">- Mary Kathryn F.</p>
+                            <p class="text-right py-2">- Mary Kathryn F.</p>
                             <p class="text-right">Destination: Austin, TX</p>
                         </div>
                     </div>
@@ -203,8 +204,73 @@
             </a>
           </div>
     </section>
-    <section id=AsSeenOn>As seen on</section>
-    <footer>footer</footer>
+    <section id=AsSeenOn>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 align-self-center">
+                    <h3 style="color: black">As seen on:</h3>
+                </div>
+                <div class="col-sm-12 col-md-4 align-self-center">
+                    <a href="https://www.thedwightd.com/partners">
+                        <img style="width: 70%; height: 70%" src="diwghtd-logo.webp" alt="Dwight D">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4 align-self-center">
+                    <a href="https://blog.thirdlove.com/womenmade-float-there-founders-angela-jiang-and-linda-ye/">
+                        <img style="width: 70%; height: 70%" src="thirdlove_logo.jpg" alt="Third Love">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=JoinForm>
+        <div class ="jumbotron text-center" style="background-color: white; padding-bottom: 1%">
+            <h3>Now accepting limited orders.</h3>
+            <p>Join now to learn more about how we're changing the art of packing and get 10%
+                 off your first order.
+            </p>
+            <form>
+                <div class="form-row">
+                    <div class="col my-3">
+                        <label for="name" style="float: left">Name</label>
+                        <input type="text" class="form-control" placeholder="ex: Jane Smith">
+                    </div>
+                    <div class="col my-3">
+                        <label for="vacationDate" style="float: left">Vacation Date</label>
+                        <input type="text" class="form-control" placeholder="ex: 03/14/20">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="email" style="float: left">Email</label>
+                        <input type="email" class="form-control" placeholder="ex: jane@example.com">
+                    </div>
+                    <div class="col">
+                        <label for="hearAbout" style="float: left">How did you hear about us?</label>
+                        <input type="text" class="form-control" placeholder="ex: Instagram">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn2 btn-outline-primary mt-3">Submit</button>
+              </form>
+        </div>
+    </section>
+    <footer>
+        <div class ="jumbotron text-center" style="background-color: white; padding:0px; margin:0px">
+            <p>Follow us: 
+            <a href="https://www.instagram.com/floatthere/">
+                <img style="width: 3%; height: 3%" src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/floatthere/">
+                <img style="width: 3%; height: 3%" src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/floatthere">
+                <img style="width: 3%; height: 3%" src="twitter.png" alt="Twitter">
+            </a>
+        </p>
+            <p>Questions? Contact Us: <a href="mailto:info@floatthere.com">info@floatthere.com</a></p>
+            <p>&copy2020 by FLOAT/THERE</p>
+        </div>
+    </footer>
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

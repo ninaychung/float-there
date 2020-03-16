@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="indexstyles.css">
     <link rel="icon" href="FLOAT_THERE.png"/>
+
+    <!--trying to get form to load but isn't working-->
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#exampleModalCenter').modal('show');
+        });
+    </script>
+
+    <!--limited success with datetimepicker :((-->
+
 </head>
 
 <body>
@@ -36,9 +46,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Browse Our Collection</a>
                 </li>
+                <li>
+                    <a class="nav-link" href="#">Log In</a>
+                </li>
+    
               </ul>   
             </div>
-            <a class="nav-link" href="#">Sign In</a>
+            
+           
         </nav>
         <div class ="jumbotron jumbotron-fluid jumbotronheader text-center text-white pt-5">
             <h1 class="pt-5" style="color: #E3F2F3">Welcome to your travel closet.</h1>
@@ -252,8 +267,58 @@
                 </div>
                 <button type="submit" class="btn btn2 btn-outline-primary mt-3">Submit</button>
               </form>
+              
+            </div>
         </div>
     </section>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"role="document">
+      <div class="modal-content" style="background-color: #E3F2F3" >
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Get your name on the list.</h5>
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form>
+            <div class="modal-body">
+                <div class="form-row">
+                    <div class="col my-3">
+                        <label for="name" style="float: left">Name</label>
+                        <input type="text" class="form-control" placeholder="ex: Jane Smith">
+                    </div>
+                    <div class="col my-3">
+                        <label for="vacationDate" style="float: left">Vacation Date</label>
+                        <input type="text" class="form-control" placeholder="ex: 03/14/20">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="email" style="float: left">Email</label>
+                        <input type="email" class="form-control" placeholder="ex: jane@example.com">
+                    </div>
+                    <div class="col">
+                        <label for="hearAbout" style="float: left">How did you hear about us?</label>
+                        <input type="text" class="form-control" placeholder="ex: Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn2 btn-outline-primary mx-auto">Submit</button>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+<!--end of modal-->
     <footer>
         <div class ="jumbotron text-center" style="background-color: white; padding:0px; margin:0px">
             <p>Follow us: 

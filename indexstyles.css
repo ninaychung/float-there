@@ -3,6 +3,8 @@ html {
   }
 nav {
     background: transparent;
+    font-weight: 400;
+    font-size: 90%;
 }
 body {
     font-family: 'Quicksand', sans-serif;

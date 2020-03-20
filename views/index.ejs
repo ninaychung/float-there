@@ -7,18 +7,39 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500&display=Arial" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="indexstyles.css">
-    <link rel="icon" href="FLOAT_THERE.png"/>
+    <link rel="icon" href="FLOAT_THERE.png" type="image/x-icon"/>
 
     <!-- for calendar date picker-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-     <!--trying to get form to load but isn't working-->
-    <script>       
-      $(document).ready(function(){       
-           $("#exampleModalCenter").modal('show');
-        });
+   
+    <!-- datepicker and form validation not working for modal on client side:(-->
+    <% if (messagefooter != null) { %>
+        <script>$('#exampleModalCenter').modal('hide');
+        // trying to get page to scroll to bottom but ain't working
+        
+
+     //   $(window).load(function(){ 
+      //      $("html, body").animate({ scrollTop: $("#JoinForm").scrollTop() }, 1000); 
+         //   document.getElementById('JoinForm').scrollIntoView();
+    //     document.body.scrollTop = $(document).height(); // For Safari
+    //    document.documentElement.scrollTop = $(document).height(); // For Chrome, Firefox, IE and Opera
+      //  });
+        
     </script>
+    <%} else {%>
+        <script>   
+            $(document).ready(function(){       
+            $("#exampleModalCenter").modal('show');
+            $('#datepicker').datepicker({
+                uiLibrary: 'bootstrap4'
+                }); 
+            
+            });
+                
+        </script>
+    <%}%>
 </head>
 
 <body>
@@ -26,7 +47,8 @@
         <div class ="jumbotron jumbotron-fluid jumbotronheader text-center text-white pt-1">
             <nav class="navbar navbar-expand-lg navbar-dark navbar-transparent">
                 <a class="navbar-brand" href="#" style="font-weight: 300; font-size: 150%">FLOAT/THERE</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -243,7 +265,7 @@
             <p>Join now to learn more about how we're changing the art of packing and get 10%
                  off your first order.
             </p>
-            <form action="/submit-subscribe">
+            <form method="POST" action="/subscribe-footer">
                 <div class="form-row">
                     <div class="col my-3">
                         <label for="name" style="float: left">Name</label>
@@ -270,14 +292,21 @@
                         <input type="text" class="form-control" placeholder="ex: Instagram" name="source">
                     </div>
                 </div>
-                <button type="submit" class="btn btn2 btn-outline-primary mt-3">Submit</button>
+                <button type="submit" onClick="document.getElementById('JoinForm').scrollIntoView();" class="btn btn2 btn-outline-primary mt-3">Submit</button>
+                <p><%=messagefooter%></p>
               </form>
-              
+              <script>
+                  function stayBottom() {
+                    document.body.scrollTop = $(document).height(); // For Safari
+                    document.documentElement.scrollTop = $(document).height(); // For Chrome, Firefox, IE and Opera
+                  }
+              </script>
             </div>
         </div>
     </section>
   
   <!-- Modal -->
+
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered"role="document">
       <div class="modal-content" style="background-color: #E3F2F3" >
@@ -288,7 +317,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="/submit-subscribe">
+        <form method="POST" action="/subscribe-modal">
             <div class="modal-body">
                 <div class="form-row">
                     <div class="col my-3">
@@ -297,7 +326,7 @@
                     </div>
                     <div class="col my-3">
                         <label for="vacationDate" style="float: left">Vacation Date</label>
-                        <input id="datepicker" width="276" name="date"/>
+                        <input id="datepicker" style="z-index: 1600 !important" class="form-control" placeholder="ex: 03/14/20" name="date"/>
                         <script>
                             $('#datepicker').datepicker({
                                 uiLibrary: 'bootstrap4'
@@ -316,8 +345,10 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer text-center">
                 <button type="submit" class="btn btn2 btn-outline-primary mx-auto">Submit</button>
+
+                <p class="col-12"><%=messagemodal%> </p>
             </div>
         </form>
       </div>
